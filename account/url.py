@@ -9,6 +9,8 @@ urlpatterns = [
     path('login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 
-    # TODO: написать сброс пароля 
+    path('reset_password/', ForgotPasswordAPIView.as_view()),
+    path('reset_password_complete/', ForgotPasswordCompleteAPIView.as_view()),
+
 
 ]
