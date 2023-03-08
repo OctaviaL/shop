@@ -1,5 +1,6 @@
 from django.core.mail import send_mail
 
+
 def send_activation_code(email, code):
     send_mail(
         'Py25 shop project', # title
@@ -15,3 +16,4 @@ def send_password_code(email, code):
         'lucifercommander@gmail.com', # from
         [email] # to
     )
+
